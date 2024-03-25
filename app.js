@@ -1,1 +1,1 @@
-const _ = require('lo')
+console.log('Hello People');
