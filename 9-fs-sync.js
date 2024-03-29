@@ -9,12 +9,16 @@ console.log(first, second);
 
 // Creating a file
 writeFileSync(
-    './content/result-sync.txt', 
-    `Here is the result :  
+    './content/result-sync.txt',
+    `Here is the result :
     ${first}, ${second}`
 );
 
 // Appending into the file
 writeFileSync('./content/result-sync.txt', `Hello Wolrd!`, {flag: 'a'})
+
+// Or to append you can do this.
+
+fs.appendFileSync('./content/result-sync.txt', 'Hello, I have appended.');
 console.log('done')
 console.log('next')
