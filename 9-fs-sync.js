@@ -21,7 +21,7 @@ writeFileSync('./content/result-sync.txt', `Hello Wolrd!`, {flag: 'a'})
 
 fs.appendFileSync('./content/result-sync.txt', 'Hello, I have appended.');
 
-// fs.unlinkSync('./content/first.txt') This will delete the file.
+fs.unlinkSync('./content/first.txt') // This will delete the file.
 
 
 console.log('done')
@@ -30,3 +30,7 @@ console.log('next')
 fs.mkdirSync('myfolder'); // This si used for making a directory
 
 fs.readdirSync('myfolder'); // This is used for reading the directory
+
+fs.existdirSync('myfolder') // This is used for checking if the directory exists
+
+fs.rmdirSync('myfolder') // This is used for deleting the directory
